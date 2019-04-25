@@ -1,0 +1,13 @@
+OrdererOrgs:
+  - Name: GreenWood
+    Domain: deakin.edu.au
+    Specs:
+      - Hostname: greenwood
+PeerOrgs:
+  - Name: TestPeer
+    Domain: peer.example.com
+    EnableNodeOUs: true
+    Template:
+      Count: 2
+    Users:
+      Count: 1
