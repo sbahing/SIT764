@@ -1,0 +1,5 @@
+CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/peer.example.com/users/Admin@peer.example.com/msp
+CORE_PEER_ADDRESS=peer0.peer.example.com:7051
+CORE_PEER_LOCALMSPID="TestPeerMSP"
+CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto//peerOrganizations/peer.example.com/peers/peer0.peer.example.com/tls/ca.crt
+CHANNEL_NAME=firstchannel

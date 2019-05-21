@@ -1,0 +1,24 @@
+#!/bin/bash
+
+LANGUAGE=${1:-"node"} 
+
+CHC_VERSION=${2:-"v0"}
+
+CHC_SRC_PATH=/opt/gopath/src/github.com/chaincode
+
+CHC_NAME=chaincodeTest
+
+#install chaincode 
+#respective to envoronment variable
+#source peer0 to install on peer0.peer.example.com
+#source peer1 to install on peer1.peer.example.com
+
+source peer0
+
+peer chaincode install -n $CHC_NAME -v "$CHC_VERSION" -p "$CHC_SRC_PATH" -l "$LANGUAGE"
+
+#instantiate chaincode
+peer chaincode instantiate -o greenwood.deakin.edu.au:7050 -C $CHANNEL_NAME -n $CHC_NAME -l "$LANGUAGE" -v "$CHC_VERSION" -c '{"Args":["init"]}' -P "OR ('TestPeerMSP.member')" --tls --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/deakin.edu.au/msp/tlscacerts/tlsca.deakin.edu.au-cert.pem 
+
+#test chaincode invoke
+#peer chaincode invoke -o greenwood.deakin.edu.au:7050 -C $CHANNEL_NAME -n chaincodeTest -c '{"function":"UserEnter","Args":["1", "sajesh", "bcn001"]}' --tls --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/deakin.edu.au/msp/tlscacerts/tlsca.deakin.edu.au-cert.pem

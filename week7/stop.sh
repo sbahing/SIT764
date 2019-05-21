@@ -15,3 +15,6 @@ docker rm peer1.peer.example.com
 docker volume rm firstnetwork_greenwood.deakin.edu.au
 docker volume rm firstnetwork_peer0.peer.example.com
 docker volume rm firstnetwork_peer1.peer.example.com
+
+rm -rf channel-artifacts
+rm -rf crypto-config

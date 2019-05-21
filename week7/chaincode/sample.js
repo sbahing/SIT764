@@ -3,7 +3,7 @@
 const shim = require('fabric-shim');
 const util = require('util');
 
-let Chaincode = class {
+let ChaincodeTest = class {
     async Init(stub) {
         let ret = stub.getFunctionAndParameters();
         console.info(ret);
@@ -80,4 +80,4 @@ let Chaincode = class {
     }
 }
 
-shim.start(new Chaincode());
+shim.start(new ChaincodeTest());

@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#setting envoronment variable for peer0
+source ./peer0
+
+#create channel
+peer channel create -o greenwood.deakin.edu.au:7050 -c $CHANNEL_NAME -f ./channel-artifacts/channel.tx --tls --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/deakin.edu.au/orderers/greenwood.deakin.edu.au/msp/tlscacerts/tlsca.deakin.edu.au-cert.pem
+
+sleep 2s
+
+#use generated .block file to join peer0 on created channel
+peer channel join -b firstchannel.block
+
+#update anchor peer
+peer channel update -o greenwood.deakin.edu.au:7050 -c $CHANNEL_NAME -f ./channel-artifacts/TestPeerMSPanchors.tx --tls --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/deakin.edu.au/orderers/greenwood.deakin.edu.au/msp/tlscacerts/tlsca.deakin.edu.au-cert.pem
+
+#setting environment variable for peer1
+source ./peer1
+
+#use generated .block file to join peer1 on created channel
+peer channel join -b firstchannel.block

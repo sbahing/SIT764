@@ -16,13 +16,13 @@ Organizations:
 
     # SampleOrg defines an MSP using the sampleconfig.  It should never be used
     # in production but may be used as a template for other definitions
-    - &OrdererOrg
+    - &GreenWood
         # DefaultOrg defines the organization which is used in the sampleconfig
         # of the fabric.git development environment
-        Name: OrdererOrg
+        Name: GreenWood
 
         # ID to load the MSP definition as
-        ID: OrdererMSP
+        ID: GreenWoodMSP
 
         # MSPDir is the filesystem path which contains the MSP configuration
         MSPDir: crypto-config/ordererOrganizations/deakin.edu.au/msp
@@ -33,13 +33,13 @@ Organizations:
         Policies:
             Readers:
                 Type: Signature
-                Rule: "OR('OrdererMSP.member')"
+                Rule: "OR('GreenWoodMSP.member')"
             Writers:
                 Type: Signature
-                Rule: "OR('OrdererMSP.member')"
+                Rule: "OR('GreenWoodMSP.member')"
             Admins:
                 Type: Signature
-                Rule: "OR('OrdererMSP.admin')"
+                Rule: "OR('GreenWoodMSP.admin')"
 
     - &TestPeer
         # DefaultOrg defines the organization which is used in the sampleconfig
@@ -251,7 +251,6 @@ Channel: &ChannelDefaults
         Admins:
             Type: ImplicitMeta
             Rule: "MAJORITY Admins"
-
     # Capabilities describes the channel level capabilities, see the
     # dedicated Capabilities section elsewhere in this file for a full
     # description
@@ -273,7 +272,7 @@ Profiles:
         Orderer:
             <<: *OrdererDefaults
             Organizations:
-                - *OrdererOrg
+                - *GreenWood
             Capabilities:
                 <<: *OrdererCapabilities
         Consortiums:
