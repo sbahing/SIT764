@@ -1,0 +1,533 @@
+postgres://hppoc:password@127.0.0.1:5432/fabricexplorer
+(node:18919) DeprecationWarning: grpc.load: Use the @grpc/proto-loader module with grpc.loadPackageDefinition instead
+
+
+Please open web browser to access ：http://localhost:8080/
+
+
+pid is 18919
+
+
+postgres://hppoc:password@127.0.0.1:5432/fabricexplorer
+
+Sync process is started for the network : [network-1] and client : [client-1]
+(node:19014) DeprecationWarning: grpc.load: Use the @grpc/proto-loader module with grpc.loadPackageDefinition instead
+Insert sql is INSERT INTO channel  ( "name","createdt","blocks","trans","channel_hash","channel_genesis_hash" ) VALUES( $1,$2,$3,$4,$5,$6  ) RETURNING *;
+INSERT ID: 3
+Insert sql is INSERT INTO peer  ( "mspid","requests","events","server_hostname","channel_genesis_hash","peer_type" ) VALUES( $1,$2,$3,$4,$5,$6  ) RETURNING *;
+INSERT ID: 1
+Insert sql is INSERT INTO peer_ref_channel  ( "peerid","channelid" ) VALUES( $1,$2  ) RETURNING *;
+INSERT ID: 1
+Insert sql is INSERT INTO peer  ( "mspid","requests","events","server_hostname","channel_genesis_hash","peer_type" ) VALUES( $1,$2,$3,$4,$5,$6  ) RETURNING *;
+INSERT ID: 2
+Insert sql is INSERT INTO peer_ref_channel  ( "peerid","channelid" ) VALUES( $1,$2  ) RETURNING *;
+INSERT ID: 2
+Insert sql is INSERT INTO peer  ( "mspid","requests","server_hostname","channel_genesis_hash","peer_type" ) VALUES( $1,$2,$3,$4,$5  ) RETURNING *;
+INSERT ID: 3
+Insert sql is INSERT INTO peer_ref_channel  ( "peerid","channelid" ) VALUES( $1,$2  ) RETURNING *;
+INSERT ID: 3
+Insert sql is INSERT INTO chaincodes  ( "name","version","path","txcount","createdt","channel_genesis_hash" ) VALUES( $1,$2,$3,$4,$5,$6  ) RETURNING *;
+INSERT ID: 10
+Insert sql is INSERT INTO peer_ref_chaincode  ( "chaincodeid","cc_version","peerid","channelid" ) VALUES( $1,$2,$3,$4  ) RETURNING *;
+INSERT ID: 1
+
+
+Synchronizer pid is 19014
+
+
+read_set length 243
+write_set size >>>>>>>>> :  0.5007638931274414 MB
+Insert sql is INSERT INTO transactions  ( "blockid","txhash","createdt","chaincodename","chaincode_id","status","creator_msp_id","endorser_msp_id","type","read_set","write_set","channel_genesis_hash","validation_code","envelope_signature","payload_extension","creator_nonce","chaincode_proposal_input","endorser_signature","creator_id_bytes","payload_proposal_hash","endorser_id_bytes" ) VALUES( $1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20,$21  ) RETURNING *;
+INSERT ID: 6
+Insert sql is INSERT INTO blocks  ( "blocknum","datahash","prehash","txcount","createdt","prev_blockhash","blockhash","channel_genesis_hash" ) VALUES( $1,$2,$3,$4,$5,$6,$7,$8  ) RETURNING *;
+INSERT ID: 1
+Insert sql is INSERT INTO transactions  ( "blockid","txhash","createdt","chaincodename","chaincode_id","status","creator_msp_id","endorser_msp_id","type","read_set","write_set","channel_genesis_hash","validation_code","envelope_signature","payload_extension","creator_nonce","chaincode_proposal_input","endorser_signature","creator_id_bytes","payload_proposal_hash","endorser_id_bytes" ) VALUES( $1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20,$21  ) RETURNING *;
+INSERT ID: 7
+Insert sql is INSERT INTO blocks  ( "blocknum","datahash","prehash","txcount","createdt","prev_blockhash","blockhash","channel_genesis_hash" ) VALUES( $1,$2,$3,$4,$5,$6,$7,$8  ) RETURNING *;
+INSERT ID: 2
+Insert sql is INSERT INTO transactions  ( "blockid","txhash","createdt","chaincodename","chaincode_id","status","creator_msp_id","endorser_msp_id","type","read_set","write_set","channel_genesis_hash","validation_code","envelope_signature","payload_extension","creator_nonce","chaincode_proposal_input","endorser_signature","creator_id_bytes","payload_proposal_hash","endorser_id_bytes" ) VALUES( $1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20,$21  ) RETURNING *;
+INSERT ID: 8
+Insert sql is INSERT INTO blocks  ( "blocknum","datahash","prehash","txcount","createdt","prev_blockhash","blockhash","channel_genesis_hash" ) VALUES( $1,$2,$3,$4,$5,$6,$7,$8  ) RETURNING *;
+INSERT ID: 3
+read_set length 127
+write_set size >>>>>>>>> :  0.5011081695556641 MB
+Insert sql is INSERT INTO transactions  ( "blockid","txhash","createdt","chaincodename","chaincode_id","status","creator_msp_id","endorser_msp_id","type","read_set","write_set","channel_genesis_hash","validation_code","envelope_signature","payload_extension","creator_nonce","chaincode_proposal_input","endorser_signature","creator_id_bytes","payload_proposal_hash","endorser_id_bytes" ) VALUES( $1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20,$21  ) RETURNING *;
+INSERT ID: 9
+Insert sql is INSERT INTO blocks  ( "blocknum","datahash","prehash","txcount","createdt","prev_blockhash","blockhash","channel_genesis_hash" ) VALUES( $1,$2,$3,$4,$5,$6,$7,$8  ) RETURNING *;
+INSERT ID: 4
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007638931274414 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007638931274414 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007638931274414 MB
+read_set length 243
+write_set size >>>>>>>>> :  0.5007638931274414 MB
+Insert sql is INSERT INTO transactions  ( "blockid","txhash","createdt","chaincodename","chaincode_id","status","creator_msp_id","endorser_msp_id","type","read_set","write_set","channel_genesis_hash","validation_code","envelope_signature","payload_extension","creator_nonce","chaincode_proposal_input","endorser_signature","creator_id_bytes","payload_proposal_hash","endorser_id_bytes" ) VALUES( $1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20,$21  ) RETURNING *;
+INSERT ID: 10
+Insert sql is INSERT INTO blocks  ( "blocknum","datahash","prehash","txcount","createdt","prev_blockhash","blockhash","channel_genesis_hash" ) VALUES( $1,$2,$3,$4,$5,$6,$7,$8  ) RETURNING *;
+INSERT ID: 5
+Broadcast >> {"title":"Block 4 added to Channel: firstchannel","type":"block","message":"Block 4 established with 1 tx","time":"2019-05-21T16:51:09.341Z","txcount":1,"datahash":"d4b33d6f2f333ffd39c2e8216b86614d880ae922c05857682bab7b1f0d057f58"}
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007638931274414 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007638931274414 MB
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+Insert sql is INSERT INTO transactions  ( "blockid","txhash","createdt","chaincodename","chaincode_id","status","creator_msp_id","endorser_msp_id","type","read_set","write_set","channel_genesis_hash","validation_code","envelope_signature","payload_extension","creator_nonce","chaincode_proposal_input","endorser_signature","creator_id_bytes","payload_proposal_hash","endorser_id_bytes" ) VALUES( $1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20,$21  ) RETURNING *;
+INSERT ID: 11
+Insert sql is INSERT INTO blocks  ( "blocknum","datahash","prehash","txcount","createdt","prev_blockhash","blockhash","channel_genesis_hash" ) VALUES( $1,$2,$3,$4,$5,$6,$7,$8  ) RETURNING *;
+INSERT ID: 6
+Broadcast >> {"title":"Block 5 added to Channel: firstchannel","type":"block","message":"Block 5 established with 1 tx","time":"2019-05-21T16:53:06.782Z","txcount":1,"datahash":"5ed37c777bebb1d63e20c132c0b934cb8d72ce76ff690e60bbdb45447985a8f6"}
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+Insert sql is INSERT INTO transactions  ( "blockid","txhash","createdt","chaincodename","chaincode_id","status","creator_msp_id","endorser_msp_id","type","read_set","write_set","channel_genesis_hash","validation_code","envelope_signature","payload_extension","creator_nonce","chaincode_proposal_input","endorser_signature","creator_id_bytes","payload_proposal_hash","endorser_id_bytes" ) VALUES( $1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20,$21  ) RETURNING *;
+INSERT ID: 12
+Insert sql is INSERT INTO blocks  ( "blocknum","datahash","prehash","txcount","createdt","prev_blockhash","blockhash","channel_genesis_hash" ) VALUES( $1,$2,$3,$4,$5,$6,$7,$8  ) RETURNING *;
+INSERT ID: 7
+Broadcast >> {"title":"Block 6 added to Channel: firstchannel","type":"block","message":"Block 6 established with 1 tx","time":"2019-05-22T00:33:03.432Z","txcount":1,"datahash":"d07b2407abc05d0e1c7da2caef037d56a4985928c4036545f2d6f0c2534ea70d"}
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+
+Sync process is started for the network : [network-1] and client : [client-1]
+read_set length 243
+write_set size >>>>>>>>> :  0.5007600784301758 MB
+<<<<<<<<<<<<<<<<<<<<<<<<<< Closing client processor >>>>>>>>>>>>>>>>>>>>>
+Received kill signal, shutting down gracefully
+<<<<<<<<<<<<<<<<<<<<<<<<<< Closing explorer  >>>>>>>>>>>>>>>>>>>>>
+Closed out connections
+<<<<<<<<<<<<<<<<<<<<<<<<<< Closing client processor >>>>>>>>>>>>>>>>>>>>>

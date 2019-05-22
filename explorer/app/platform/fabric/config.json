@@ -1,0 +1,76 @@
+{
+  "network-configs": {
+    "network-1": {
+      "version": "1.0",
+      "clients": {
+        "client-1": {
+          "tlsEnable": true,
+          "organization": "TestPeerMSP",
+          "channel": "firstchannel",
+          "credentialStore": {
+            "path": "./tmp/credentialStore_peer/credential",
+            "cryptoStore": {
+              "path": "./tmp/credentialStore_peer/crypto"
+            }
+          }
+        }
+      },
+      "channels": {
+        "firstchannel": {
+          "peers": {
+            "peer0.peer.example.com": {}
+          },
+          "connection": {
+            "timeout": {
+              "peer": {
+                "endorser": "6000",
+                "eventHub": "6000",
+                "eventReg": "6000"
+              }
+            }
+          }
+        }
+      },
+      "organizations": {
+        "TestPeerMSP": {
+          "mspid": "TestPeerMSP",
+          "fullpath": false,
+          "adminPrivateKey": {
+            "path": "/home/sajesh/hyperledger/SIT764/crypto-config/peerOrganizations/peer.example.com/users/Admin@peer.example.com/msp/keystore"
+          },
+          "signedCert": {
+            "path": "/home/sajesh/hyperledger/SIT764/crypto-config/peerOrganizations/peer.example.com/users/Admin@peer.example.com/msp/signcerts"
+          }
+        },
+        "GreenWoodMSP": {
+          "mspid": "GreenWoodMSP",
+          "adminPrivateKey": {
+            "path": "/home/sajesh/hyperledger/SIT764/crypto-config/ordererOrganizations/deakin.edu.au/users/Admin@deakin.edu.au/msp/keystore"
+          }
+        }
+      },
+      "peers": {
+        "peer0.peer.example.com": {
+          "tlsCACerts": {
+            "path": "/home/sajesh/hyperledger/SIT764/crypto-config/peerOrganizations/peer.example.com/peers/peer0.peer.example.com/tls/ca.crt"
+          },
+          "url": "grpcs://localhost:7051",
+          "eventUrl": "grpcs://localhost:7053",
+          "grpcOptions": {
+            "ssl-target-name-override": "peer0.peer.example.com"
+          }
+        },
+        "peer1.peer.example.com": {
+          "url": "grpcs://localhost:8051"
+        }
+      },
+      "orderers": {
+        "greenwood.deakin.edu.au": {
+          "url": "grpcs://localhost:7050"
+        }
+      }
+    }
+  },
+  "configtxgenToolPath": "/home/sajesh/hyperledger/fabric-samples/bin",
+  "license": "Apache-2.0"
+}

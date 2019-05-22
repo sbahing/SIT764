@@ -1,0 +1,100 @@
+[2019-05-23 00:20:31.762] [DEBUG] pgservice -  the getRowsBySQlQuery SELECT s.id AS missing_id
+    FROM generate_series(0, 6) s(id) WHERE NOT EXISTS (SELECT 1 FROM blocks WHERE blocknum = s.id and channel_genesis_hash ='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' )
+[2019-05-23 00:21:24.906] [DEBUG] pgservice -  the getRowsBySQlQuery SELECT s.id AS missing_id
+    FROM generate_series(0, 6) s(id) WHERE NOT EXISTS (SELECT 1 FROM blocks WHERE blocknum = s.id and channel_genesis_hash ='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' )
+[2019-05-23 00:21:24.923] [DEBUG] pgservice -  the getRowsBySQlQuery SELECT s.id AS missing_id
+    FROM generate_series(0, 6) s(id) WHERE NOT EXISTS (SELECT 1 FROM blocks WHERE blocknum = s.id and channel_genesis_hash ='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' )
+[2019-05-23 00:21:24.956] [DEBUG] pgservice -  the getRowsBySQlCase  select * from channel where name='firstchannel' and channel_genesis_hash='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' 
+[2019-05-23 00:21:24.964] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' and server_hostname='peer0.peer.example.com' 
+[2019-05-23 00:21:24.965] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer0.peer.example.com' and prc.channelid='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' 
+[2019-05-23 00:21:24.965] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' and server_hostname='peer1.peer.example.com' 
+[2019-05-23 00:21:24.965] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer1.peer.example.com' and prc.channelid='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' 
+[2019-05-23 00:21:24.966] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' and server_hostname='greenwood.deakin.edu.au' 
+[2019-05-23 00:21:24.966] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'greenwood.deakin.edu.au' and prc.channelid='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' 
+[2019-05-23 00:21:24.980] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from chaincodes where name='chaincodeTest' and
+        channel_genesis_hash='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' and version='v0' and path='/opt/gopath/src/github.com/chaincode'
+[2019-05-23 00:21:24.981] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer0.peer.example.com' and prc.chaincodeid='chaincodeTest' and cc_version='v0' and channelid='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2'
+[2019-05-23 00:21:24.985] [DEBUG] pgservice -  the getRowsBySQlQuery SELECT s.id AS missing_id
+    FROM generate_series(0, 6) s(id) WHERE NOT EXISTS (SELECT 1 FROM blocks WHERE blocknum = s.id and channel_genesis_hash ='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' )
+[2019-05-23 00:21:24.991] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from transactions where blockid='6' and txhash='87f87c6a05853acf68ad663d718cfe386ff492644b5604d2343c36841ee2bbfd' and channel_genesis_hash='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2'
+[2019-05-23 00:21:24.991] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from blocks where blocknum='6' and txcount='1'
+        and channel_genesis_hash='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' and prehash='3a72098de90a3abb1e54e6ba75a70d322527e63a56a7132ff452632b01a9668a' and datahash='d07b2407abc05d0e1c7da2caef037d56a4985928c4036545f2d6f0c2534ea70d' 
+[2019-05-23 00:21:25.494] [DEBUG] pgservice -  the getRowsBySQlQuery SELECT s.id AS missing_id
+    FROM generate_series(0, 6) s(id) WHERE NOT EXISTS (SELECT 1 FROM blocks WHERE blocknum = s.id and channel_genesis_hash ='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' )
+[2019-05-23 00:21:30.020] [DEBUG] pgservice -  the getRowsBySQlQuery SELECT s.id AS missing_id
+    FROM generate_series(0, 6) s(id) WHERE NOT EXISTS (SELECT 1 FROM blocks WHERE blocknum = s.id and channel_genesis_hash ='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' )
+[2019-05-23 00:22:24.724] [DEBUG] pgservice -  the getRowsBySQlCase  select * from channel where name='firstchannel' and channel_genesis_hash='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' 
+[2019-05-23 00:22:24.729] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' and server_hostname='peer0.peer.example.com' 
+[2019-05-23 00:22:24.729] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer0.peer.example.com' and prc.channelid='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' 
+[2019-05-23 00:22:24.730] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' and server_hostname='peer1.peer.example.com' 
+[2019-05-23 00:22:24.730] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer1.peer.example.com' and prc.channelid='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' 
+[2019-05-23 00:22:24.730] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' and server_hostname='greenwood.deakin.edu.au' 
+[2019-05-23 00:22:24.730] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'greenwood.deakin.edu.au' and prc.channelid='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' 
+[2019-05-23 00:22:24.736] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from chaincodes where name='chaincodeTest' and
+        channel_genesis_hash='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' and version='v0' and path='/opt/gopath/src/github.com/chaincode'
+[2019-05-23 00:22:24.736] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer0.peer.example.com' and prc.chaincodeid='chaincodeTest' and cc_version='v0' and channelid='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2'
+[2019-05-23 00:22:24.744] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from transactions where blockid='6' and txhash='87f87c6a05853acf68ad663d718cfe386ff492644b5604d2343c36841ee2bbfd' and channel_genesis_hash='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2'
+[2019-05-23 00:22:24.744] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from blocks where blocknum='6' and txcount='1'
+        and channel_genesis_hash='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' and prehash='3a72098de90a3abb1e54e6ba75a70d322527e63a56a7132ff452632b01a9668a' and datahash='d07b2407abc05d0e1c7da2caef037d56a4985928c4036545f2d6f0c2534ea70d' 
+[2019-05-23 00:22:24.754] [DEBUG] pgservice -  the getRowsBySQlQuery SELECT s.id AS missing_id
+    FROM generate_series(0, 6) s(id) WHERE NOT EXISTS (SELECT 1 FROM blocks WHERE blocknum = s.id and channel_genesis_hash ='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' )
+[2019-05-23 00:22:25.020] [DEBUG] pgservice -  the getRowsBySQlQuery SELECT s.id AS missing_id
+    FROM generate_series(0, 6) s(id) WHERE NOT EXISTS (SELECT 1 FROM blocks WHERE blocknum = s.id and channel_genesis_hash ='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' )
+[2019-05-23 00:22:25.060] [DEBUG] pgservice -  the getRowsBySQlQuery SELECT s.id AS missing_id
+    FROM generate_series(0, 6) s(id) WHERE NOT EXISTS (SELECT 1 FROM blocks WHERE blocknum = s.id and channel_genesis_hash ='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' )
+[2019-05-23 00:22:25.092] [DEBUG] pgservice -  the getRowsBySQlQuery SELECT s.id AS missing_id
+    FROM generate_series(0, 6) s(id) WHERE NOT EXISTS (SELECT 1 FROM blocks WHERE blocknum = s.id and channel_genesis_hash ='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' )
+[2019-05-23 00:22:25.126] [DEBUG] pgservice -  the getRowsBySQlQuery SELECT s.id AS missing_id
+    FROM generate_series(0, 6) s(id) WHERE NOT EXISTS (SELECT 1 FROM blocks WHERE blocknum = s.id and channel_genesis_hash ='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' )
+[2019-05-23 00:22:25.197] [DEBUG] pgservice -  the getRowsBySQlQuery SELECT s.id AS missing_id
+    FROM generate_series(0, 6) s(id) WHERE NOT EXISTS (SELECT 1 FROM blocks WHERE blocknum = s.id and channel_genesis_hash ='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' )
+[2019-05-23 00:22:25.349] [DEBUG] pgservice -  the getRowsBySQlQuery SELECT s.id AS missing_id
+    FROM generate_series(0, 6) s(id) WHERE NOT EXISTS (SELECT 1 FROM blocks WHERE blocknum = s.id and channel_genesis_hash ='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' )
+[2019-05-23 00:22:26.681] [DEBUG] pgservice -  the getRowsBySQlQuery SELECT s.id AS missing_id
+    FROM generate_series(0, 6) s(id) WHERE NOT EXISTS (SELECT 1 FROM blocks WHERE blocknum = s.id and channel_genesis_hash ='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' )
+[2019-05-23 00:22:29.765] [DEBUG] pgservice -  the getRowsBySQlQuery SELECT s.id AS missing_id
+    FROM generate_series(0, 6) s(id) WHERE NOT EXISTS (SELECT 1 FROM blocks WHERE blocknum = s.id and channel_genesis_hash ='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' )
+[2019-05-23 00:23:24.730] [DEBUG] pgservice -  the getRowsBySQlCase  select * from channel where name='firstchannel' and channel_genesis_hash='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' 
+[2019-05-23 00:23:24.735] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' and server_hostname='peer0.peer.example.com' 
+[2019-05-23 00:23:24.735] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer0.peer.example.com' and prc.channelid='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' 
+[2019-05-23 00:23:24.736] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' and server_hostname='peer1.peer.example.com' 
+[2019-05-23 00:23:24.736] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer1.peer.example.com' and prc.channelid='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' 
+[2019-05-23 00:23:24.736] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' and server_hostname='greenwood.deakin.edu.au' 
+[2019-05-23 00:23:24.737] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'greenwood.deakin.edu.au' and prc.channelid='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' 
+[2019-05-23 00:23:24.743] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from chaincodes where name='chaincodeTest' and
+        channel_genesis_hash='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' and version='v0' and path='/opt/gopath/src/github.com/chaincode'
+[2019-05-23 00:23:24.744] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer0.peer.example.com' and prc.chaincodeid='chaincodeTest' and cc_version='v0' and channelid='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2'
+[2019-05-23 00:23:24.752] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from transactions where blockid='6' and txhash='87f87c6a05853acf68ad663d718cfe386ff492644b5604d2343c36841ee2bbfd' and channel_genesis_hash='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2'
+[2019-05-23 00:23:24.752] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from blocks where blocknum='6' and txcount='1'
+        and channel_genesis_hash='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' and prehash='3a72098de90a3abb1e54e6ba75a70d322527e63a56a7132ff452632b01a9668a' and datahash='d07b2407abc05d0e1c7da2caef037d56a4985928c4036545f2d6f0c2534ea70d' 
+[2019-05-23 00:23:25.523] [DEBUG] pgservice -  the getRowsBySQlQuery SELECT s.id AS missing_id
+    FROM generate_series(0, 6) s(id) WHERE NOT EXISTS (SELECT 1 FROM blocks WHERE blocknum = s.id and channel_genesis_hash ='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' )
+[2019-05-23 00:23:25.571] [DEBUG] pgservice -  the getRowsBySQlQuery SELECT s.id AS missing_id
+    FROM generate_series(0, 6) s(id) WHERE NOT EXISTS (SELECT 1 FROM blocks WHERE blocknum = s.id and channel_genesis_hash ='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' )
+[2019-05-23 00:23:25.753] [DEBUG] pgservice -  the getRowsBySQlQuery SELECT s.id AS missing_id
+    FROM generate_series(0, 6) s(id) WHERE NOT EXISTS (SELECT 1 FROM blocks WHERE blocknum = s.id and channel_genesis_hash ='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' )
+[2019-05-23 00:23:25.808] [DEBUG] pgservice -  the getRowsBySQlQuery SELECT s.id AS missing_id
+    FROM generate_series(0, 6) s(id) WHERE NOT EXISTS (SELECT 1 FROM blocks WHERE blocknum = s.id and channel_genesis_hash ='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' )
+[2019-05-23 00:23:29.770] [DEBUG] pgservice -  the getRowsBySQlQuery SELECT s.id AS missing_id
+    FROM generate_series(0, 6) s(id) WHERE NOT EXISTS (SELECT 1 FROM blocks WHERE blocknum = s.id and channel_genesis_hash ='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' )
+[2019-05-23 00:24:24.773] [DEBUG] pgservice -  the getRowsBySQlCase  select * from channel where name='firstchannel' and channel_genesis_hash='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' 
+[2019-05-23 00:24:24.788] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' and server_hostname='peer0.peer.example.com' 
+[2019-05-23 00:24:24.789] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer0.peer.example.com' and prc.channelid='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' 
+[2019-05-23 00:24:24.790] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' and server_hostname='peer1.peer.example.com' 
+[2019-05-23 00:24:24.791] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer1.peer.example.com' and prc.channelid='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' 
+[2019-05-23 00:24:24.792] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' and server_hostname='greenwood.deakin.edu.au' 
+[2019-05-23 00:24:24.793] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'greenwood.deakin.edu.au' and prc.channelid='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' 
+[2019-05-23 00:24:24.811] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from chaincodes where name='chaincodeTest' and
+        channel_genesis_hash='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' and version='v0' and path='/opt/gopath/src/github.com/chaincode'
+[2019-05-23 00:24:24.812] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer0.peer.example.com' and prc.chaincodeid='chaincodeTest' and cc_version='v0' and channelid='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2'
+[2019-05-23 00:24:24.838] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from transactions where blockid='6' and txhash='87f87c6a05853acf68ad663d718cfe386ff492644b5604d2343c36841ee2bbfd' and channel_genesis_hash='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2'
+[2019-05-23 00:24:24.839] [DEBUG] pgservice -  the getRowByPkOne sql select count(1) as c from blocks where blocknum='6' and txcount='1'
+        and channel_genesis_hash='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' and prehash='3a72098de90a3abb1e54e6ba75a70d322527e63a56a7132ff452632b01a9668a' and datahash='d07b2407abc05d0e1c7da2caef037d56a4985928c4036545f2d6f0c2534ea70d' 
+[2019-05-23 00:24:24.917] [DEBUG] pgservice -  the getRowsBySQlQuery SELECT s.id AS missing_id
+    FROM generate_series(0, 6) s(id) WHERE NOT EXISTS (SELECT 1 FROM blocks WHERE blocknum = s.id and channel_genesis_hash ='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' )
+[2019-05-23 00:24:24.990] [DEBUG] pgservice -  the getRowsBySQlQuery SELECT s.id AS missing_id
+    FROM generate_series(0, 6) s(id) WHERE NOT EXISTS (SELECT 1 FROM blocks WHERE blocknum = s.id and channel_genesis_hash ='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' )
+[2019-05-23 00:24:25.491] [DEBUG] pgservice -  the getRowsBySQlQuery SELECT s.id AS missing_id
+    FROM generate_series(0, 6) s(id) WHERE NOT EXISTS (SELECT 1 FROM blocks WHERE blocknum = s.id and channel_genesis_hash ='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' )
+[2019-05-23 00:24:29.845] [DEBUG] pgservice -  the getRowsBySQlQuery SELECT s.id AS missing_id
+    FROM generate_series(0, 6) s(id) WHERE NOT EXISTS (SELECT 1 FROM blocks WHERE blocknum = s.id and channel_genesis_hash ='dd92815674fc3fb7181e2f0f477735a2c182d4c40626ff8d7f8c7f0a046517b2' )
