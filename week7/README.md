@@ -1,3 +1,4 @@
+# Learning materials
 Resource to learn about crypto config, config generation and docker compose configuration:
 
 https://www.youtube.com/playlist?list=PLjsqymUqgpSTGC4L6ULHCB_Mqmy43OcIh
@@ -15,7 +16,10 @@ we can just install node chaincode using peer chaincode command (refer to offici
 
 *peer lifecycle chaincode* command will not work which is mentioned in docs "wierd".
 
-start.sh - This is a very simple command that generates cryptography materials, genesis block, channel configuration
+# How to setup the network
+
+## start.sh
+This is a very simple command that generates cryptography materials, genesis block, channel configuration
 , docker containers and start those docker containers.
 
 to only generate configuration and containers without running those container use **start.sh gen only** command.
@@ -24,5 +28,15 @@ to generate config and containers and run those containers use **start.sh gen** 
 
 to run pregenerated containers without generating any config simply use **start.sh**
 
-stop.sh - This is a simple command that stops all the containers, deletes docker volumes and also configuration files generated.
+## stop.sh
+This is a simple command that stops all the containers, deletes docker volumes and also configuration files generated.
 must use this carefully as i have not added any options to just stop the containers or to just delete configurations.
+
+After starting all the containers use cli container to add channel to the network using the channel configuration 
+generated using **start.sh**.
+
+## scripts/channel
+This script creates the channel and joins both peers to that channel and also updates anchor peer for the oeganization. Run from cli container.
+
+## scripts/install
+This script installs the chaincode in the peers and instantiate the chaincode. edit for seperate peers. instantiate chaincode only once in the channel. run from cli container.
