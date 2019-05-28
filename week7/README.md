@@ -14,3 +14,15 @@ To deploy node chain code packaging is not required as mentioned in official doc
 we can just install node chaincode using peer chaincode command (refer to official docs for details).
 
 *peer lifecycle chaincode* command will not work which is mentioned in docs "wierd".
+
+start.sh - This is a very simple command that generates cryptography materials, genesis block, channel configuration
+, docker containers and start those docker containers.
+
+to only generate configuration and containers without running those container use **start.sh gen only** command.
+
+to generate config and containers and run those containers use **start.sh gen** command.
+
+to run pregenerated containers without generating any config simply use **start.sh**
+
+stop.sh - This is a simple command that stops all the containers, deletes docker volumes and also configuration files generated.
+must use this carefully as i have not added any options to just stop the containers or to just delete configurations.
